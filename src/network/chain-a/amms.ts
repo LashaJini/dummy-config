@@ -1,6 +1,8 @@
 import { AmmName } from "../../amms";
 import { ProtocolName, protocols } from "../../protocols";
 
+// JUST SOMETHING ELSE
+
 export const amms = [
   {
     id: 1,
@@ -67,7 +69,7 @@ export const amms = [
   {
     id: 1004,
     name: AmmName.Amm25,
-    protocol: protocols[ProtocolName.F],
+    protocol: protocols[ProtocolName.A], // TEST
     factoryAddresses: ["0xaaa8"],
     related: 1003,
   },
