@@ -2,6 +2,8 @@ export * from "./types";
 
 import { Protocol, ProtocolName } from "./types";
 
+// SOME STUFF
+
 export const protocols: { [key in ProtocolName]: Protocol } = {
   [ProtocolName.Alpha]: {
     id: 1,
@@ -81,6 +83,6 @@ export const protocols: { [key in ProtocolName]: Protocol } = {
   [ProtocolName.F]: {
     id: 253,
     name: ProtocolName.F,
-    hasPermanentPools: false,
+    hasPermanentPools: true,
   },
 };
