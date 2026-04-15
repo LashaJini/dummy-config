@@ -4,8 +4,8 @@ on:
   push:
     branches: [main]
     paths:
-      - 'src/protocols/index.ts'
-      - 'src/network/*/amms.ts'
+      - "src/protocols/index.ts"
+      - "src/network/*/amms.ts"
 
 jobs:
   auto-assign-ids:
@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
         with:
           fetch-depth: 2
-          token: ${{ secrets.BOT_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Node.js
         # v6.3.0
