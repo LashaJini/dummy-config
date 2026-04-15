@@ -58,4 +58,14 @@ export const protocols: { [key in ProtocolName]: Protocol } = {
     name: ProtocolName.Kappa,
     hasPermanentPools: true,
   },
+  [ProtocolName.B]: {
+    id: -120,
+    name: ProtocolName.B,
+    hasPermanentPools: true,
+  },
+  [ProtocolName.C]: {
+    id: 250,
+    name: ProtocolName.C,
+    hasPermanentPools: true,
+  },
 };

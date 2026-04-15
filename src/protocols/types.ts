@@ -10,6 +10,8 @@ export enum ProtocolName {
   Iota = "iota",
   Kappa = "kappa",
   A = "A",
+  B = "B",
+  C = "C",
 }
 
 export type Protocol = {

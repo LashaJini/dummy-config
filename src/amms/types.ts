@@ -20,6 +20,7 @@ export enum AmmName {
   Amm17 = "amm-17",
   Amm18 = "amm-18",
   Amm19 = "amm-19",
+  Amm20 = "amm-20",
 }
 
 export interface Amm {
