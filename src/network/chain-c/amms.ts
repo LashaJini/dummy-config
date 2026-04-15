@@ -46,7 +46,7 @@ export const amms = [
     factoryAddresses: ["0xccc6"],
   },
   {
-    id: 50000,
+    id: 1005,
     name: AmmName.Amm26,
     protocol: protocols[ProtocolName.G],
     factoryAddresses: ["0xccc7"],
