@@ -30,10 +30,10 @@ export const amms = [
     factoryAddresses: ["0xaaa4"],
   },
   {
-    id: 13,
+    id:    13,
     name: AmmName.Amm13,
     protocol: protocols[ProtocolName.Alpha],
-    factoryAddresses: ["0xaaa5"],
+    factoryAddresses: ["0xaaa5", "0xaaa5b"],
   },
   {
     id: 14,
