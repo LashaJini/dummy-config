@@ -7,6 +7,9 @@ on:
       - "src/protocols/index.ts"
       - "src/network/*/amms.ts"
 
+permissions:
+  contents: write
+
 jobs:
   auto-assign-ids:
     runs-on: ubuntu-latest
