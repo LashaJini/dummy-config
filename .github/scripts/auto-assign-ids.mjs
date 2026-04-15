@@ -38,14 +38,23 @@ function getDiffAddedIds(filePaths) {
       { encoding: 'utf8' },
     );
 
-    const ids = new Set();
+    const addedIds = new Set();
+    const removedIds = new Set();
     for (const line of diff.split('\n')) {
       if (line.startsWith('+') && !line.startsWith('+++')) {
         const match = line.match(/\bid:\s*(\d+)/);
-        if (match) ids.add(parseInt(match[1]));
+        if (match) addedIds.add(parseInt(match[1]));
+      } else if (line.startsWith('-') && !line.startsWith('---')) {
+        const match = line.match(/\bid:\s*(\d+)/);
+        if (match) removedIds.add(parseInt(match[1]));
       }
     }
-    return ids;
+
+    // IDs in both added and removed lines are modifications (e.g. reformatted by linter), not new entries
+    for (const id of removedIds) {
+      addedIds.delete(id);
+    }
+    return addedIds;
   } catch {
     return new Set();
   }
