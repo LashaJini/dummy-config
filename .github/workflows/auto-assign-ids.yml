@@ -2,7 +2,7 @@ name: Auto-assign AMM & Protocol IDs
 
 on:
   push:
-    branches: [main]
+    branches: [master]
     paths:
       - "src/protocols/index.ts"
       - "src/network/*/amms.ts"
