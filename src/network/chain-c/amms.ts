@@ -39,4 +39,10 @@ export const amms = [
     protocol: protocols[ProtocolName.A],
     factoryAddresses: ["0xccc5"],
   },
+  {
+    id: 1111,
+    name: AmmName.Amm23,
+    protocol: protocols[ProtocolName.D],
+    factoryAddresses: ["0xccc6"],
+  },
 ];

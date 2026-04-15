@@ -12,6 +12,8 @@ export enum ProtocolName {
   A = "A",
   B = "B",
   C = "C",
+  D = "D",
+  E = "E",
 }
 
 export type Protocol = {
