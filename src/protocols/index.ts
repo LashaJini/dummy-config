@@ -1,6 +1,6 @@
-export * from './types';
+export * from "./types";
 
-import { Protocol, ProtocolName } from './types';
+import { Protocol, ProtocolName } from "./types";
 
 export const protocols: { [key in ProtocolName]: Protocol } = {
   [ProtocolName.Alpha]: {
@@ -50,6 +50,11 @@ export const protocols: { [key in ProtocolName]: Protocol } = {
   },
   [ProtocolName.Kappa]: {
     id: 10,
+    name: ProtocolName.Kappa,
+    hasPermanentPools: true,
+  },
+  [ProtocolName.A]: {
+    id: 11,
     name: ProtocolName.Kappa,
     hasPermanentPools: true,
   },
