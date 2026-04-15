@@ -79,7 +79,7 @@ export const protocols: { [key in ProtocolName]: Protocol } = {
     hasPermanentPools: true,
   },
   [ProtocolName.F]: {
-    id: 9999,
+    id: 253,
     name: ProtocolName.F,
     hasPermanentPools: false,
   },
